@@ -12,9 +12,8 @@ public class SpikeTrap : MonoBehaviour
     public float SpikeTimeToExtend = 0.4f;
     public float SpikeTimeFullyExtended = 1;
     public float RetractionTime = 3;
+    public int Damage = 1;
 
-    // TODO: Add some data here for collecting the player script
-    public UnityEvent OnHitPlayer;
 
     public TrapController trapController;
 
@@ -24,12 +23,11 @@ public class SpikeTrap : MonoBehaviour
         StartCoroutine(ExtendSpikes(SpikeTimeToExtend));
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerStay(Collider other) {
         if (other.CompareTag("Player") && !_alreadyHitPlayer && _spikeTriggered) {
             Debug.Log("Hit Player");
             _alreadyHitPlayer = true;
-            OnHitPlayer.Invoke();
-        }
+            other.GetComponent<PlayerHearts>().TakeDamage(Damage);}
     }
 
     private IEnumerator ExtendSpikes(float timeToExtend) {
