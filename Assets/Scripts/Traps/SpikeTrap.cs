@@ -47,7 +47,6 @@ public class SpikeTrap : MonoBehaviour
     }
 
     private IEnumerator RetractSpikes(float timeToRetract) {
-        yield return new WaitForSeconds(SpikeTimeFullyExtended);
         float elapsedTime = 0;
         Vector3 originalPosition = transform.position;
         Vector3 targetPosition = transform.position - transform.up * SpikeDistance;
