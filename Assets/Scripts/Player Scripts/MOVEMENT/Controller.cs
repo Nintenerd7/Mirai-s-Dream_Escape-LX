@@ -34,8 +34,6 @@ public class Controller : MonoBehaviour
     public void OnCollisionStay(Collision collision)
     {
         int groundLayer = LayerMask.NameToLayer("Ground");
-        Debug.Log("Touching Something");
-        Debug.Log(collision.gameObject.layer);
         if (collision.gameObject.layer == groundLayer && Input.GetButton("Jump"))//if player is on ground and presses space
         {
             rb.AddForce(Vector3.up * JumpHeight, ForceMode.VelocityChange);//player jumps
