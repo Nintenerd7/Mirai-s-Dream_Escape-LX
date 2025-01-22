@@ -6,11 +6,13 @@ public class Collectible : MonoBehaviour
 {
     public UnityEvent OnCollect;
 
-    public bool spin = true;
+    public Vector3 spin = Vector3.zero;
 
-    void Update() {
-        if (spin) {
-            transform.Rotate(0, 90 * Time.deltaTime, 0);
+    void Update()
+    {
+        if (spin != Vector3.zero)
+        {
+            transform.Rotate(spin * Time.deltaTime);
         }
     }
 

@@ -121,4 +121,4 @@ MonoBehaviour:
   OnCollect:
     m_PersistentCalls:
       m_Calls: []
-  spin: 1
+  spin: {x: 0, y: 90, z: 0}
