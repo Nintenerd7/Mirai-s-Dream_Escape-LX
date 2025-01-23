@@ -33,11 +33,13 @@ public class Controller : MonoBehaviour
 
     public void OnCollisionStay(Collision collision)
     {
+      Debug.Log("Collided with: " + collision.gameObject.name);
         int groundLayer = LayerMask.NameToLayer("Ground");
-        if (collision.gameObject.layer == groundLayer && Input.GetButton("Jump"))//if player is on ground and presses space
-        {
-            rb.AddForce(Vector3.up * JumpHeight, ForceMode.VelocityChange);//player jumps
-        }
+      if (collision.gameObject.layer == groundLayer)//if player is on ground
+      {
+        if (Input.GetButton("Jump"))//if player presses space
+          rb.AddForce(Vector3.up * JumpHeight, ForceMode.VelocityChange);//player jumps
+      }
     }
 
   //Dash Enumerator 
