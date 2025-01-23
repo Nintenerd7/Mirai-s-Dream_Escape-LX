@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
@@ -6,11 +7,22 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
 
-    public float speed = 120f;
+
+    public float BaseSpeed = 10f;
+    public float Speed { 
+      get {
+        if (isDashing) {
+          return BaseSpeed + Dashing;
+        } else {
+          return BaseSpeed;
+        } 
+      } 
+    }
     public float JumpHeight = 3f;
     //Dash Variables  
     public bool isDashing = false;
-    public float Dashing = 5f; 
+    public float Dashing = 10f; 
+    private Vector3 _movementVector = Vector3.zero;
     private Rigidbody rb;
 
     void Awake() {
@@ -24,31 +36,54 @@ public class Controller : MonoBehaviour
         float z = Input.GetAxis("Vertical");//Gets inputs W+S for moving up and down
         
         //movement speed calculation 
-        Vector3 move = transform.right * x * speed + transform.forward * z * speed;//uses x and z axis for movement direction
-        rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);//speed is calculated at every frame
+        _movementVector = x * transform.right + z * transform.forward;//uses x and z axis for movement direction
 
         if (Input.GetMouseButtonDown(1) && !isDashing)//if player clicks right click
           StartCoroutine(Dash());
     }
 
-    public void OnCollisionStay(Collision collision)
+    private void FixedUpdate()
     {
-      Debug.Log("Collided with: " + collision.gameObject.name);
-        int groundLayer = LayerMask.NameToLayer("Ground");
-      if (collision.gameObject.layer == groundLayer)//if player is on ground
-      {
-        if (Input.GetButton("Jump"))//if player presses space
-          rb.AddForce(Vector3.up * JumpHeight, ForceMode.VelocityChange);//player jumps
-      }
+      rb.MovePosition(transform.position + Speed * Time.deltaTime * new Vector3(_movementVector.x, 0, _movementVector.z));//speed is calculated at every frame
+
     }
 
-  //Dash Enumerator 
-    public IEnumerator Dash()//Enumerator for Dash button
-    {
-      isDashing = true;//dash is enabled
-      speed += Dashing;//dash is added onto speed
-      yield return new WaitForSeconds(0.4f);//WAITS FOR 0.4 SECONDS BEFORE SPEED RETURNS TO NORMAL
-      speed = 12f;//speed returns to normal
-      isDashing = false;//dash is disabled
+  private bool GameobjectIsGroundLayer(GameObject go) {
+      return go.layer == LayerMask.NameToLayer("Ground");
     }
+
+    // public void OnCollisionEnter(Collision collision)
+    // {
+    //   Debug.Log("Collided with: " + collision.gameObject.name);
+    //   if (GameobjectIsGroundLayer(collision.gameObject)) {
+    //     transform.parent = collision.transform;
+    //   }
+    // }
+    // public void OnCollisionExit(Collision collision)
+    // {
+    //   Debug.Log("Collided with: " + collision.gameObject.name);
+    //   if (GameobjectIsGroundLayer(collision.gameObject))
+    //   {
+    //     transform.parent = null;
+    //   }
+    // }
+
+    public void OnCollisionStay(Collision collision)
+      {
+        Debug.Log("Collided with: " + collision.gameObject.name);
+        if (GameobjectIsGroundLayer(collision.gameObject))//if player is on ground
+        {
+          if (Input.GetButton("Jump"))//if player presses space
+            rb.AddForce(Vector3.up * JumpHeight, ForceMode.Impulse);//player jumps
+        }
+      }
+
+
+    //Dash Enumerator 
+      public IEnumerator Dash()//Enumerator for Dash button
+      {
+        isDashing = true;//dash is enabled
+        yield return new WaitForSeconds(0.4f);//WAITS FOR 0.4 SECONDS BEFORE SPEED RETURNS TO NORMAL
+        isDashing = false;//dash is disabled
+      }
 }
