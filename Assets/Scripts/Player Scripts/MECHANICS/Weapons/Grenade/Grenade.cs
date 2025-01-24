@@ -36,10 +36,12 @@ public class Grenade : MonoBehaviour
         {
             if (hit.TryGetComponent<Rigidbody>(out var rb))
             {
-                float distance = Vector3.Distance(transform.position, rb.position);
-                float force = ForcePerDistance.Evaluate(distance / ExplosionRadius) * ExplosionForce;
-                Debug.Log("Applying force: " + force + " to " + rb.name);
-                rb.AddExplosionForce(force, transform.position, ExplosionRadius);
+                if (rb != GetComponent<Rigidbody>()) {
+                    float distance = Vector3.Distance(transform.position, rb.position);
+                    float force = ForcePerDistance.Evaluate(distance / ExplosionRadius) * ExplosionForce;
+                    Debug.Log("Applying force: " + force + " to " + rb.name);
+                    rb.AddExplosionForce(force, transform.position, ExplosionRadius);
+                }
             }
         }
     }

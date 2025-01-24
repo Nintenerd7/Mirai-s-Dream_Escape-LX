@@ -136,7 +136,7 @@ MonoBehaviour:
   particles:
   - {fileID: 2115142318924809636}
   - {fileID: 7695928601364735407}
-  FuseTime: 1.5
+  FuseTime: 2.5
   ExplosionRadius: 5
   ExplosionForce: 700
   ForcePerDistance:
@@ -182,7 +182,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &634593151465441168
 Rigidbody:
@@ -192,7 +192,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2417087092175335976}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6079,8 +6079,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 120
-        minScalar: 70
+        scalar: 800
+        minScalar: 300
         maxCurve:
           serializedVersion: 2
           m_Curve:
