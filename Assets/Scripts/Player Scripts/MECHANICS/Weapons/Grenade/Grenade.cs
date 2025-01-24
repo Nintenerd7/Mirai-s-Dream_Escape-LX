@@ -29,7 +29,8 @@ public class Grenade : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void ApplyExplosionForce() {
+    private void ApplyExplosionForce()
+    {
         Collider[] colliders = Physics.OverlapSphere(transform.position, ExplosionRadius);
         foreach (Collider hit in colliders)
         {
@@ -38,7 +39,7 @@ public class Grenade : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, rb.position);
                 float force = ForcePerDistance.Evaluate(distance / ExplosionRadius) * ExplosionForce;
                 Debug.Log("Applying force: " + force + " to " + rb.name);
-                rb.AddExplosionForce(force, transform.position, ExplosionRadius, 3f);
+                rb.AddExplosionForce(force, transform.position, ExplosionRadius);
             }
         }
     }
