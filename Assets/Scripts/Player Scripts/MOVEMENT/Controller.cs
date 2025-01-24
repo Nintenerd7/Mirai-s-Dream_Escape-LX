@@ -52,25 +52,8 @@ public class Controller : MonoBehaviour
       return go.layer == LayerMask.NameToLayer("Ground");
     }
 
-    // public void OnCollisionEnter(Collision collision)
-    // {
-    //   Debug.Log("Collided with: " + collision.gameObject.name);
-    //   if (GameobjectIsGroundLayer(collision.gameObject)) {
-    //     transform.parent = collision.transform;
-    //   }
-    // }
-    // public void OnCollisionExit(Collision collision)
-    // {
-    //   Debug.Log("Collided with: " + collision.gameObject.name);
-    //   if (GameobjectIsGroundLayer(collision.gameObject))
-    //   {
-    //     transform.parent = null;
-    //   }
-    // }
-
     public void OnCollisionStay(Collision collision)
       {
-        Debug.Log("Collided with: " + collision.gameObject.name);
         if (GameobjectIsGroundLayer(collision.gameObject))//if player is on ground
         {
           if (Input.GetButton("Jump"))//if player presses space
