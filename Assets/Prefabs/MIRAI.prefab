@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5474079335449663556}
   - component: {fileID: 3226909703381113321}
   - component: {fileID: -2130501475167240892}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MIRAI
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188c51f3c5fd38042b6dbf27708db447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  BaseSpeed: 5
   JumpHeight: 3
   isDashing: 0
   Dashing: 5
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 91262832190983312}
   - component: {fileID: 4004473275787902172}
   - component: {fileID: 7736386928441343771}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5012,7 +5012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 742586825769302009}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5045,7 +5045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9131870643240158044}
   - component: {fileID: 1486493618529934430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5138,7 +5138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6980046091168970560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5170,7 +5170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5128957136521031040}
   - component: {fileID: 857198769828171310}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WEAPON_MANAGER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5222,13 +5222,13 @@ GameObject:
   - component: {fileID: 6203573093709778924}
   - component: {fileID: 3945799001275635805}
   - component: {fileID: 6375772856430030381}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2851869503127663168
 Transform:
   m_ObjectHideFlags: 0
@@ -5345,7 +5345,7 @@ GameObject:
   - component: {fileID: 7340739143586993322}
   - component: {fileID: 243114418250149463}
   - component: {fileID: 7066067747056178242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -5367,6 +5367,7 @@ Transform:
   m_Children:
   - {fileID: 2851869503127663168}
   - {fileID: 5128957136521031040}
+  - {fileID: 2348023569954677103}
   m_Father: {fileID: 742586825769302009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7340739143586993322
@@ -5451,7 +5452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6241134911498674209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground_Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5473,3 +5474,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1839175078188370741}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2108235515443537022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7713352728979494167}
+    m_Modifications:
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454484763889438743, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_Name
+      value: Grenade Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824336705701481727, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+--- !u!4 &2348023569954677103 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455238669610730769, guid: ca1f38f6fc1fce144aa62c8be7e167d5, type: 3}
+  m_PrefabInstance: {fileID: 2108235515443537022}
+  m_PrefabAsset: {fileID: 0}

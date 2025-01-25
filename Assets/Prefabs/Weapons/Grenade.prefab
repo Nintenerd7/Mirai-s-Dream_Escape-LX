@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 347200650202133560}
   - component: {fileID: 2270579007525660727}
   - component: {fileID: 4780246512000471142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grenade Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1774597070915422252}
   - component: {fileID: 1333365595839650783}
   - component: {fileID: 634593151465441168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &4369203060205606843
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 3999063293810980297}
   - component: {fileID: 2115142318924809636}
   - component: {fileID: 4858006171213703430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5110,7 +5110,7 @@ GameObject:
   - component: {fileID: 3212562270944681424}
   - component: {fileID: 7695928601364735407}
   - component: {fileID: 4867426830054609685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,8 +11,7 @@ public class Grenade : MonoBehaviour
     public float ExplosionForce = 700;
     public AnimationCurve ForcePerDistance;
 
-    void Start()
-    {
+    public void LaunchGrenade() {
         StartCoroutine(Explode());
     }
 
