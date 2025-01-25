@@ -2335,14 +2335,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3226909703381113321, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7091878933480872780, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: JumpHeight
-      value: 2.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
