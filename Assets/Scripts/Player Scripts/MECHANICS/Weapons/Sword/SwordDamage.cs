@@ -17,8 +17,7 @@ public class SwordDamage : MonoBehaviour
         Target target = other.GetComponent<Target>();//gets target object reference from target script without being public
         
         if(target != null) target.TakeDamage(damage);// if target is not empty then the enemy will be damaged using the damage number above to pass the parameter
-            Debug.Log("you hit a foe");
-            other.GetComponent<Animator>().SetTrigger("Attack");//hit trigger activates
+        Debug.Log("you hit a foe");
         }
        
     }
