@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CollectibleManager : MonoBehaviour
 {
@@ -18,10 +19,17 @@ public class CollectibleManager : MonoBehaviour
         }
     }
 
-    public void NotifyCollectiblePickup() {
+    public void NotifyCollectiblePickup()
+    {
         _collectiblesPickedUp++;
         Debug.Log("Collectible picked up. Total: " + _collectiblesPickedUp);
 
         OnCollectiblePickedUp.Invoke(_collectiblesPickedUp);
+    }
+
+    public void SwitchToScene(string sceneName)
+    {
+        Debug.Log("Switching to scene");
+        SceneManager.LoadScene(sceneName);
     }
 }
