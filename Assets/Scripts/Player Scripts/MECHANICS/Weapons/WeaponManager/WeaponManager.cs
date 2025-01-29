@@ -14,6 +14,10 @@ public class WeaponManager : MonoBehaviour
   }
 
   public void Update() {
+    if (Input.GetKeyDown(KeyCode.E)) {
+      int nextWeapon = (CurrentWeapon + 1) % Weapon.Length;
+      SwitchWeapon(nextWeapon);
+    }
     if (Input.GetKeyDown(KeyCode.Alpha1)) {
       SwitchWeapon(0);
     }
