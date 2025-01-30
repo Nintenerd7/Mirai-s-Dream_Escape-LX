@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -57,7 +58,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -82,7 +83,167 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: big robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube.014
+      parentName: big robot(Clone)
+      position: {x: 1.7798948, y: 8.653004, z: -6.3586054}
+      rotation: {x: -0.68295294, y: -0.18323545, z: -0.18323545, w: 0.682953}
+      scale: {x: 100, y: 100, z: 173.89592}
+    - name: Mball
+      parentName: big robot(Clone)
+      position: {x: 1.7694607, y: 10.666711, z: -6.35637}
+      rotation: {x: -0.48923984, y: 0.4652601, z: 0.6876402, w: 0.26707378}
+      scale: {x: 22.17798, y: 31.64155, z: 27.997702}
+    - name: Cabeza
+      parentName: big robot(Clone)
+      position: {x: -0, y: 9.037893, z: -8.169313}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Glass head
+      parentName: big robot(Clone)
+      position: {x: -0, y: 8.85929, z: -8.164016}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 189.26582, y: 252.59586, z: 194.39433}
+    - name: Left arm
+      parentName: big robot(Clone)
+      position: {x: -0, y: 8.127973, z: -4.928241}
+      rotation: {x: 0.007351088, y: -0.024968375, z: 0.00018360691, w: 0.9996612}
+      scale: {x: 95.86757, y: 116.74698, z: 106.57917}
+    - name: left finger 1
+      parentName: big robot(Clone)
+      position: {x: -0.37386572, y: 9.194748, z: 1.454488}
+      rotation: {x: 0.165927, y: 0.6873633, z: 0.68736327, w: -0.16592702}
+      scale: {x: 15.393451, y: 16.605543, z: 15.774807}
+    - name: left finger 2
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 8.759097, z: 2.1243784}
+      rotation: {x: 0.31294036, y: -0.009195654, z: 0.94908345, w: 0.034991723}
+      scale: {x: 19.43115, y: 16.605824, z: 22.776205}
+    - name: left finger 3
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 8.1785755, z: 2.1243784}
+      rotation: {x: 0.31294036, y: -0.009195654, z: 0.94908345, w: 0.034991723}
+      scale: {x: 19.43115, y: 16.605824, z: 22.776205}
+    - name: left finger 4
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 7.5845084, z: 2.1243784}
+      rotation: {x: 0.31294036, y: -0.009195654, z: 0.94908345, w: 0.034991723}
+      scale: {x: 19.43115, y: 16.605824, z: 22.776205}
+    - name: left hand
+      parentName: big robot(Clone)
+      position: {x: -0.02148816, y: 8.201076, z: 2.1452265}
+      rotation: {x: 0.79803354, y: 0.0054955212, z: 0.60252637, w: -0.008616755}
+      scale: {x: 93.12942, y: 59.421535, z: 49.070026}
+    - name: left joint
+      parentName: big robot(Clone)
+      position: {x: -0.06857424, y: 8.127669, z: -1.315596}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 44.999977, y: 45, z: 45}
+    - name: ruleman izq
+      parentName: big robot(Clone)
+      position: {x: -0.056232724, y: 8.118464, z: -3.8749254}
+      rotation: {x: 0.99994576, y: 0.0033731102, z: -0.003098189, w: 0.009357268}
+      scale: {x: 21.12875, y: 23.302599, z: 52.719772}
+    - name: right arm
+      parentName: big robot(Clone)
+      position: {x: -0, y: 8.127973, z: -11.248363}
+      rotation: {x: 0.9998323, y: 0.005936337, z: -0.017326314, w: 0.00024152796}
+      scale: {x: 95.86759, y: 116.74698, z: 106.57917}
+    - name: right finger
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 8.759097, z: -18.359005}
+      rotation: {x: -0.014623772, y: 0.94912034, z: -0.004074022, w: 0.31454763}
+      scale: {x: 19.43115, y: 16.605822, z: 22.776205}
+    - name: right finger.001
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 8.133687, z: -18.359005}
+      rotation: {x: -0.014623772, y: 0.94912034, z: -0.004074022, w: 0.31454763}
+      scale: {x: 19.43115, y: 16.605822, z: 22.776205}
+    - name: right finger.002
+      parentName: big robot(Clone)
+      position: {x: -0.2514642, y: 7.5122476, z: -18.359005}
+      rotation: {x: -0.014623772, y: 0.94912034, z: -0.004074022, w: 0.31454763}
+      scale: {x: 19.43115, y: 16.605822, z: 22.776205}
+    - name: right finger 3
+      parentName: big robot(Clone)
+      position: {x: -0.37386572, y: 9.194748, z: -17.50715}
+      rotation: {x: -0.1659287, y: 0.6873628, z: 0.6873629, w: 0.16592872}
+      scale: {x: 15.393499, y: 16.605545, z: 15.774807}
+    - name: right hand
+      parentName: big robot(Clone)
+      position: {x: -0.02148816, y: 8.201076, z: -18.330713}
+      rotation: {x: -0.007641792, y: 0.60251343, z: 0.006779697, w: 0.7980434}
+      scale: {x: 93.09971, y: 59.42036, z: 49.099995}
+    - name: right joint
+      parentName: big robot(Clone)
+      position: {x: -0.04631281, y: 8.127669, z: -14.818897}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 45, y: 45.00002, z: 40.000004}
+    - name: ruleman derecho
+      parentName: big robot(Clone)
+      position: {x: -0.056232724, y: 8.1407175, z: -12.309606}
+      rotation: {x: 0.99994576, y: 0.0033731102, z: -0.003098189, w: 0.009357268}
+      scale: {x: 21.12875, y: 23.302599, z: 52.719772}
+    - name: left foot
+      parentName: big robot(Clone)
+      position: {x: -2.028892, y: -4.136947, z: -6.4052896}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 167.08202, y: 81.50486, z: 57.155018}
+    - name: left heel
+      parentName: big robot(Clone)
+      position: {x: -0.06857424, y: -4.0009933, z: -6.4198747}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 70.00004, y: 70, z: 70}
+    - name: left knee
+      parentName: big robot(Clone)
+      position: {x: -0.06857424, y: -0.7098303, z: -6.4198747}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 70.00004, y: 70, z: 70}
+    - name: left leg
+      parentName: big robot(Clone)
+      position: {x: -0, y: 1.4815217, z: -6.4309044}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 29.93418, y: 34.35333, z: 135.72832}
+    - name: left leg joint
+      parentName: big robot(Clone)
+      position: {x: -0, y: 3.7970366, z: -6.5058165}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 61.561768, y: 94.79961, z: 137.83371}
+    - name: right foot
+      parentName: big robot(Clone)
+      position: {x: -2.028892, y: -4.136947, z: -9.872052}
+      rotation: {x: -0.7071068, y: -5.035654e-15, z: 0.000000061817246, w: 0.7071067}
+      scale: {x: 167.08202, y: 81.50486, z: 57.155018}
+    - name: right knee
+      parentName: big robot(Clone)
+      position: {x: -0.06857424, y: -0.7098303, z: -9.84911}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 70.00004, y: 70, z: 70}
+    - name: right kneel
+      parentName: big robot(Clone)
+      position: {x: -0.06857424, y: -4.059262, z: -9.84911}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 70.00004, y: 70, z: 70}
+    - name: right leg
+      parentName: big robot(Clone)
+      position: {x: -0, y: 1.4815217, z: -9.804819}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 29.93418, y: 34.35333, z: 135.72832}
+    - name: right leg joiint
+      parentName: big robot(Clone)
+      position: {x: -0, y: 3.7970366, z: -9.774036}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 61.561768, y: 94.79961, z: 137.83371}
+    - name: Torso
+      parentName: big robot(Clone)
+      position: {x: -0, y: 6.9741025, z: -8.187148}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 192.41608, y: 300.12115, z: 201.88945}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -93,13 +254,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
