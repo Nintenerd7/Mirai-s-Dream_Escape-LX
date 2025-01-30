@@ -8,7 +8,6 @@ public class PauseMenu : MonoBehaviour
 
     public static bool IsPaused;
     [SerializeField] GameObject pauseMenu;
-    public GameObject[] hide_obj = new GameObject [2];
 
     void Update()
     {
@@ -17,14 +16,11 @@ public class PauseMenu : MonoBehaviour
             if (IsPaused)
             {
                 resume();
-                hide_obj[0].SetActive(true);
-                hide_obj[1].SetActive(true);
+ 
             }
             else
             {
                 Paused();
-                hide_obj[0].SetActive(false);
-                hide_obj[1].SetActive(false);
             }
         }
     }
@@ -38,8 +34,6 @@ public class PauseMenu : MonoBehaviour
 
     public void resume()
     {
-    hide_obj[0].SetActive(true);
-    hide_obj[1].SetActive(true);
        IsPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;//menu disapears
@@ -47,7 +41,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
-        AudioSourceController.Instance.PlayMusic("Title");
+        //AudioSourceController.Instance.PlayMusic("Title");
         IsPaused = false;
         pauseMenu.SetActive(false);
         SceneManager.LoadScene(0);//loads title screen

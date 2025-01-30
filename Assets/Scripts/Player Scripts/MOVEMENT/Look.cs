@@ -11,7 +11,6 @@ public class Look : MonoBehaviour
 
     float X_Rotation;//calculate the horizontal rotation of the camera
 
-    //[SerializeField]public  PauseMenu PauseGame;
     void Start()
     {
             Cursor.lockState = CursorLockMode.Locked;//locks cursor onto game screen
@@ -22,13 +21,12 @@ public class Look : MonoBehaviour
     void Update()
     {
         MoveCamera();
-       // if (PauseGame.IsPaused)//if the game is paused 
-      //  {
+       if (PauseMenu.IsPaused)//if the game is paused 
+       {
 
-           // Cursor.lockState = CursorLockMode.None;//unlock cursor
-           // Cursor.visible = true;//mouse is visible
-           
-      //  }
+           Cursor.lockState = CursorLockMode.None;//unlock cursor
+            Cursor.visible = true;//mouse is visible
+       }
 
     }
 
