@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MIRAI
       objectReference: {fileID: 0}
+    - target: {fileID: 857198769828171310, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: CurrentWeapon
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1839175078188370741, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -280,27 +284,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5488558838858813895, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: m_Size.x
-      value: 2.74
+    - target: {fileID: 2348023569954677103, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.56
       objectReference: {fileID: 0}
-    - target: {fileID: 5488558838858813895, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: m_Size.y
-      value: 1.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488558838858813895, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: m_Center.y
-      value: 0.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488558838858813895, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 6265577964804961385, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382134157573119289, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042064621672228669, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: grenadeObject
+      value: 
+      objectReference: {fileID: 380601776}
+    - target: {fileID: 7215117418698058248, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652029933637459786, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+--- !u!1 &380601776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7215117418698058248, guid: ed5d49a584790a74292e2b41c040bca6, type: 3}
+  m_PrefabInstance: {fileID: 273467200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &566509391
 GameObject:
   m_ObjectHideFlags: 0
