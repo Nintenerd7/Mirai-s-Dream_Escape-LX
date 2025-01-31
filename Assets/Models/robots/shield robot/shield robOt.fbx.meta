@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -81,8 +82,244 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: Torso
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left leg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: shield robOt(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Crest
+      parentName: shield robOt(Clone)
+      position: {x: 0.140888, y: 7.5954766, z: 0}
+      rotation: {x: 0.9999069, y: 0, z: -0, w: 0.013648043}
+      scale: {x: 68.72052, y: 24.600351, z: 19.389618}
+    - name: head
+      parentName: shield robOt(Clone)
+      position: {x: -0, y: 6.7710285, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Icosphere
+      parentName: shield robOt(Clone)
+      position: {x: 0.5082372, y: 5.4001875, z: -0.21999946}
+      rotation: {x: -0.50090224, y: -0.499096, z: -0.49908912, w: 0.50090927}
+      scale: {x: 12.748015, y: 11.382214, z: 12.128701}
+    - name: Icosphere.001
+      parentName: shield robOt(Clone)
+      position: {x: 0.44657835, y: 7.161621, z: 0.55768055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 13.219559, y: 11.382217, z: 14.501924}
+    - name: Icosphere.002
+      parentName: shield robOt(Clone)
+      position: {x: 0.05937599, y: 7.129132, z: 0.55768055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 13.219559, y: 11.382217, z: 14.501924}
+    - name: Icosphere.003
+      parentName: shield robOt(Clone)
+      position: {x: -0.26477912, y: 6.9638357, z: 0.55768055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 13.219559, y: 11.382217, z: 14.501924}
+    - name: Icosphere.004
+      parentName: shield robOt(Clone)
+      position: {x: 0.5082372, y: 5.4001875, z: 0.22966442}
+      rotation: {x: -0.5009064, y: -0.49909195, z: -0.49909326, w: 0.50090516}
+      scale: {x: 12.451383, y: 11.382214, z: 11.43505}
+    - name: Icosphere.005
+      parentName: shield robOt(Clone)
+      position: {x: 0.28780544, y: 4.1260204, z: -0.76696163}
+      rotation: {x: -0.50090224, y: -0.499096, z: -0.49908912, w: 0.50090927}
+      scale: {x: 12.748015, y: 11.382214, z: 12.128701}
+    - name: Icosphere.006
+      parentName: shield robOt(Clone)
+      position: {x: 0.28780544, y: 4.1260204, z: 0.7882561}
+      rotation: {x: -0.50090224, y: -0.499096, z: -0.49908912, w: 0.50090927}
+      scale: {x: 12.748015, y: 11.382214, z: 12.128701}
+    - name: left arm 1
+      parentName: shield robOt(Clone)
+      position: {x: 0.2192005, y: 5.3855186, z: -1.975054}
+      rotation: {x: -0.5068431, y: 0.49306196, z: -0.49306193, w: 0.5068431}
+      scale: {x: 16.664328, y: 54.34906, z: 16.848999}
+    - name: left arm 2
+      parentName: shield robOt(Clone)
+      position: {x: 0.26649773, y: 5.356076, z: -3.604959}
+      rotation: {x: 0.7167622, y: -0.69688535, z: 0.024001852, w: -0.005164793}
+      scale: {x: 15.676138, y: 14.207792, z: 83.06538}
+    - name: left arm joint
+      parentName: shield robOt(Clone)
+      position: {x: 0.21969955, y: 5.3749104, z: -2.653142}
+      rotation: {x: -0.5068431, y: 0.49306205, z: -0.49306196, w: 0.506843}
+      scale: {x: 20.000013, y: 20.000008, z: 20}
+    - name: left finger 1
+      parentName: shield robOt(Clone)
+      position: {x: 0.7530393, y: 5.132186, z: -4.6516757}
+      rotation: {x: -0.00956295, y: 0.0043354738, z: 0.97182864, w: -0.23545456}
+      scale: {x: 8.345294, y: 25.87642, z: 10.194152}
+    - name: left finger 2
+      parentName: shield robOt(Clone)
+      position: {x: -0.01342788, y: 5.111055, z: -4.6516757}
+      rotation: {x: 0.9882176, y: -0.15271305, z: 0.008826477, w: -0.005177362}
+      scale: {x: 8.345293, y: 25.876421, z: 10.194152}
+    - name: left finger 3
+      parentName: shield robOt(Clone)
+      position: {x: 0.38321385, y: 5.154464, z: -5.1048546}
+      rotation: {x: 0.67710024, y: -0.20380247, z: 0.67122614, w: -0.22238545}
+      scale: {x: 8.345852, y: 25.877481, z: 14.262429}
+    - name: left foot
+      parentName: shield robOt(Clone)
+      position: {x: 0.48154607, y: -1.0367064, z: -0.75478315}
+      rotation: {x: -0.70223975, y: 0, z: -0, w: 0.7119405}
+      scale: {x: 65.83665, y: 28.449184, z: 19.501104}
+    - name: left hand
+      parentName: shield robOt(Clone)
+      position: {x: 0.36059487, y: 5.3601236, z: -4.693025}
+      rotation: {x: -0.5068431, y: 0.49306193, z: -0.49306196, w: 0.5068431}
+      scale: {x: 19.031946, y: 28.01678, z: 20.163979}
+    - name: left knee
+      parentName: shield robOt(Clone)
+      position: {x: 0.010618001, y: 1.2118157, z: -0.68037635}
+      rotation: {x: -0.7022398, y: 0, z: -0, w: 0.71194047}
+      scale: {x: 30.00002, y: 30.000013, z: 30.000002}
+    - name: left leg
+      parentName: shield robOt(Clone)
+      position: {x: -0, y: 2.0755675, z: -0.6880113}
+      rotation: {x: -0.70223975, y: 0, z: -0, w: 0.7119405}
+      scale: {x: 15.672414, y: 14.200186, z: 72.68078}
+    - name: left leg 2
+      parentName: shield robOt(Clone)
+      position: {x: -0.023436083, y: 0.25656313, z: -0.70725334}
+      rotation: {x: 0.010690998, y: 0.71274877, z: -0.70088017, w: 0.02533538}
+      scale: {x: 15.672415, y: 14.200187, z: 72.68078}
+    - name: left leg joint
+      parentName: shield robOt(Clone)
+      position: {x: 0.010618001, y: 3.0088086, z: -0.70586544}
+      rotation: {x: -0.70017594, y: 0, z: -0, w: 0.71397036}
+      scale: {x: 40.000023, y: 40.000015, z: 40}
+    - name: Left shoulder
+      parentName: shield robOt(Clone)
+      position: {x: 0.1829518, y: 5.3845196, z: -1.0553788}
+      rotation: {x: -0.5068431, y: 0.49306196, z: -0.49306193, w: 0.5068431}
+      scale: {x: 49.539745, y: 50.531746, z: 53.603962}
+    - name: neck
+      parentName: shield robOt(Clone)
+      position: {x: 0.12776726, y: 5.8978677, z: 0.024142278}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 25.63697, y: 27.296751, z: 30.886375}
+    - name: right arm 1
+      parentName: shield robOt(Clone)
+      position: {x: 0.16803196, y: 5.407, z: 2.133399}
+      rotation: {x: 0.49300945, y: -0.5030554, z: -0.50040966, w: 0.5034553}
+      scale: {x: 16.664328, y: 54.349056, z: 16.848999}
+    - name: right arm 2
+      parentName: shield robOt(Clone)
+      position: {x: 0.13414074, y: 5.397887, z: 3.763879}
+      rotation: {x: 0.016669763, y: -0.00679001, z: -0.70960116, w: 0.70437366}
+      scale: {x: 15.676139, y: 14.207792, z: 83.065384}
+    - name: right finger 1
+      parentName: shield robOt(Clone)
+      position: {x: 0.42726088, y: 5.1723533, z: 4.8113637}
+      rotation: {x: -0.003944954, y: 0.010891495, z: 0.9865682, w: -0.1629386}
+      scale: {x: 8.345293, y: 25.876423, z: 10.194152}
+    - name: right finger 2
+      parentName: shield robOt(Clone)
+      position: {x: -0.33945578, y: 5.17776, z: 4.817309}
+      rotation: {x: 0.9742361, y: -0.22539923, z: 0.0071687675, w: 0.0028143378}
+      scale: {x: 8.345293, y: 25.87642, z: 10.194152}
+    - name: right finger 3
+      parentName: shield robOt(Clone)
+      position: {x: 0.033376254, y: 5.213536, z: 5.2671475}
+      rotation: {x: -0.66943324, y: 0.2190488, z: 0.6761839, w: -0.21599115}
+      scale: {x: 8.345852, y: 25.877481, z: 14.262431}
+    - name: right foot
+      parentName: shield robOt(Clone)
+      position: {x: 0.48192152, y: -1.0374032, z: 0.7624918}
+      rotation: {x: -0.71100354, y: 0.010221702, z: 0.010337514, w: 0.70303816}
+      scale: {x: 65.83665, y: 28.449183, z: 19.501102}
+    - name: right hand
+      parentName: shield robOt(Clone)
+      position: {x: 0.048519943, y: 5.414218, z: 4.852529}
+      rotation: {x: 0.4930095, y: -0.5030554, z: -0.5004097, w: 0.5034552}
+      scale: {x: 19.031948, y: 28.016779, z: 20.163979}
+    - name: right joint
+      parentName: shield robOt(Clone)
+      position: {x: 0.17307192, y: 5.405243, z: 2.8115497}
+      rotation: {x: 0.49300945, y: -0.5030554, z: -0.50040966, w: 0.5034553}
+      scale: {x: 20.000013, y: 20.00001, z: 20}
+    - name: right knee
+      parentName: shield robOt(Clone)
+      position: {x: 0.010742396, y: 1.2118967, z: 0.76070654}
+      rotation: {x: -0.71100354, y: 0.010221704, z: 0.010337514, w: 0.70303816}
+      scale: {x: 30.00002, y: 30.000011, z: 30.000002}
+    - name: right leg 1
+      parentName: shield robOt(Clone)
+      position: {x: -0.0005527809, y: 2.0752532, z: 0.7375783}
+      rotation: {x: -0.71100354, y: 0.010221703, z: 0.010337513, w: 0.70303816}
+      scale: {x: 15.672414, y: 14.200186, z: 72.68078}
+    - name: right leg 2
+      parentName: shield robOt(Clone)
+      position: {x: -0.023383154, y: 0.2562713, z: 0.7587444}
+      rotation: {x: -0.000054703178, y: -0.7042333, z: 0.70980525, w: -0.015230536}
+      scale: {x: 15.672414, y: 14.200186, z: 72.68078}
+    - name: right leg joint
+      parentName: shield robOt(Clone)
+      position: {x: 0.010618001, y: 3.0100305, z: 0.7660406}
+      rotation: {x: -0.71107864, y: 0, z: 0, w: 0.7031125}
+      scale: {x: 40.000023, y: 40.000015, z: 40.000004}
+    - name: right shoulder
+      parentName: shield robOt(Clone)
+      position: {x: 0.19707683, y: 5.3947306, z: 1.2135496}
+      rotation: {x: 0.49300948, y: -0.5030553, z: -0.5004097, w: 0.5034553}
+      scale: {x: 49.539745, y: 50.531746, z: 53.603966}
+    - name: Sphere.009
+      parentName: shield robOt(Clone)
+      position: {x: 0.91165096, y: 6.3642673, z: 0.43983263}
+      rotation: {x: 0.49300945, y: -0.5030554, z: -0.50040966, w: 0.5034553}
+      scale: {x: 10.000007, y: 10.000005, z: 10}
+    - name: Talking device 1
+      parentName: shield robOt(Clone)
+      position: {x: 0.2543564, y: 6.7471733, z: 0.66793996}
+      rotation: {x: 0.02821201, y: -0.017055813, z: -0.70654374, w: 0.7069011}
+      scale: {x: 24.877, y: 25.736176, z: 7.668412}
+    - name: talking device 2
+      parentName: shield robOt(Clone)
+      position: {x: 0.56495655, y: 6.518885, z: 0.697045}
+      rotation: {x: -0.008065074, y: -0.058836512, z: -0.8145671, w: 0.5770214}
+      scale: {x: 7.2929325, y: 41.77464, z: 6.9575796}
+    - name: Torso
+      parentName: shield robOt(Clone)
+      position: {x: -0, y: 4.5680594, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 78.564926, y: 135.55919, z: 173.13234}
+    - name: visor
+      parentName: shield robOt(Clone)
+      position: {x: 0.647133, y: 6.747544, z: -0.03296937}
+      rotation: {x: 0.70655775, y: -0.027861292, z: 0.027861293, w: 0.7065577}
+      scale: {x: -10.1721, y: -42.08307, z: -17.600317}
+    - name: Visor eye
+      parentName: shield robOt(Clone)
+      position: {x: 0.76572293, y: 6.7471733, z: 0.25618255}
+      rotation: {x: -0.49603814, y: 0.50393087, z: -0.5039308, w: 0.49603805}
+      scale: {x: 11.765936, y: 13.28579, z: 7.6232605}
+    - name: waist
+      parentName: shield robOt(Clone)
+      position: {x: -0.35548407, y: 2.6904578, z: 0.391478}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -93,13 +330,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

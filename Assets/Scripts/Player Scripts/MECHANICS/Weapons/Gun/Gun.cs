@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-   public float damage = 10f;
+   public float damage = 5f;
    public float range = 100f;
    public ParticleSystem Muzzleflash;
 

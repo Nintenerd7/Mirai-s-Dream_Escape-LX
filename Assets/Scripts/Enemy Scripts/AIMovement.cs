@@ -17,13 +17,12 @@ public class AIMovement : MonoBehaviour
     bool walkpointSet;
     public float range;
     //
-
+    public Animator anim;
     //attacking 
     public float AttackCoolDown;
     bool HasAttacked;
     //
 
-    //states
     public float ViewRange, AttackRange;
     public bool PlayerInView, AttackPlayer;
     //
@@ -35,6 +34,7 @@ public class AIMovement : MonoBehaviour
     {
         playerTarget = GameObject.Find("MIRAI").transform;//this is how the player gets tracked
         _agent = GetComponent<NavMeshAgent>();
+        
     }
     //
 
@@ -99,9 +99,23 @@ public class AIMovement : MonoBehaviour
     {
         if (other.tag == "Player")//if the box detects the player 
         {
-          //Play Hurt Animation
-          damage.TakeDamage(1);//takes one heart 
+            anim.SetBool("Run", false);
+            anim.SetBool("Attack", true);
+           damage.TakeDamage(1);//takes one heart 
+
         }
     }
+
+        private void OnTriggerExit(Collider other)//box collider that detects the player in their personal space
+    {
+        if (other.tag == "Player")//if the box detects the player 
+        {
+            anim.SetBool("Run", true);
+            anim.SetBool("Attack", false);
+           damage.TakeDamage(1);//takes one heart 
+
+        }
+    }
+
 
 }
