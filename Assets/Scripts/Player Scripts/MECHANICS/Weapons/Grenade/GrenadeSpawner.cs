@@ -23,7 +23,7 @@ public class GrenadeSpawner : MonoBehaviour
         GrenadeInHand.GetComponent<Collider>().enabled = true;
         GrenadeInHand.GetComponent<Rigidbody>().isKinematic = false;
         GrenadeInHand.GetComponent<Rigidbody>().AddForce(transform.forward * LaunchStrength, ForceMode.Impulse);
-        GrenadeInHand.GetComponent<Grenade>().LaunchGrenade();
+        GrenadeInHand.GetComponent<Grenade>().LaunchGrenade();//edited due to both launch grenade voids were named after eachother.
         GrenadeInHand = null;
         StartCoroutine(ReloadGrenade());
     }
